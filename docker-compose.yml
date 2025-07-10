@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: stvnsaru
+      POSTGRES_PASSWORD: alresarucoms3
+      POSTGRES_DB: nestdb
+    ports:
+      - 5499:5432
+
+      
